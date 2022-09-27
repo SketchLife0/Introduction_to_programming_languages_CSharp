@@ -1,6 +1,10 @@
-﻿int NumberOfDigits(int num){
+﻿// Написать программу используя метод что будет получать на вход число и выдавать разрядность этого числа
+
+int NumberOfDigits(int num)
+{
     int result = 1;
-    while (num > 9) {
+    while (num > 9)
+    {
         num /= 10;
         result++;
     }
