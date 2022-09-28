@@ -7,7 +7,7 @@ void ArrayCreation(int lenght)
     {
         list[i] = new Random().Next(1, 101);
         if (i != lenght - 1) Console.Write($"{list[i]}, ");
-        else Console.Write($"{list[i]}]");
+        else Console.WriteLine($"{list[i]}]");
     }
 }
 
