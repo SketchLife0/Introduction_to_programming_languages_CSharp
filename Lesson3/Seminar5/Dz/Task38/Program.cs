@@ -6,10 +6,10 @@ void LimitDifference(int num)
     int result = 0;
     int min = array[0];
     int max = array[0];
-    for (int i = 1; i < num; i++)
+    foreach (var item in array)
     {
-        if (array[i] < min) min = array[i];
-        if (array[i] > max) max = array[i];
+        if (item < min) min = item;
+        if (item > max) max = item;
     }
     result = max - min;
     Console.WriteLine(String.Join(", ", array));
